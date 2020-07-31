@@ -2634,7 +2634,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       params: {
         part: 'snippet',
         id: '',
-        key: 'AIzaSyBwWbHnKw6jlN76aO6qBhc_vQGOLWiZgSM'
+        key: "AIzaSyBwWbHnKw6jlN76aO6qBhc_vQGOLWiZgSM"
       }
     };
   },

@@ -39,7 +39,7 @@ export default {
       params: {
         part: 'snippet',
         id: '',
-        key: 'AIzaSyBwWbHnKw6jlN76aO6qBhc_vQGOLWiZgSM',
+        key: process.env.MIX_API_KEY,
       }
     }
   },
