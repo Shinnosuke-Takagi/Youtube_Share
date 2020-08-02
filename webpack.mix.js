@@ -13,7 +13,7 @@ const mix = require('laravel-mix');
 
 mix.browserSync({
   proxy: {
-    target: "http://localhost:3000"
+    target: "http://127.0.0.1:8000"
   }
 }).js('resources/js/app.js', 'public/js')
   .sass('resources/sass/app.scss', 'public/css');
