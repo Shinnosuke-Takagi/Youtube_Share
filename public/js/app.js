@@ -2669,12 +2669,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 vm.params.id = vm.results[i].video_id;
                 _context.next = 13;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('https://www.googleapis.com/youtube/v3/videos', {
-                  params: vm.params,
-                  headers: {
-                    "Access-Control-Allow-Origin": "*",
-                    "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
-                    "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token"
-                  }
+                  params: vm.params
                 });
 
               case 13:
