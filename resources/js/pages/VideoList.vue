@@ -55,7 +55,12 @@ export default {
       for (let i = 0; i < vm.results.length; i ++) {
         vm.params.id = vm.results[i].video_id
         const videoResources = await axios.get('https://www.googleapis.com/youtube/v3/videos', {
-          params: vm.params
+          params: vm.params,
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token"
+          }
         })
         console.log(videoResources)
         console.log(videoResources.data.items[0])
